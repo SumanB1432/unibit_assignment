@@ -11,7 +11,7 @@ const router = express.Router();
 router.post('/signup', userSignup.signup);
 router.post("/login",userLogin.loginUser);
 router.post("/tambola",middleware.Authentication ,tambolaTicket.generateTicket)
-router.get("/tambola",getTambola.getTickets)
+router.get("/tambola",middleware.Authentication,getTambola.getTickets)
 
 
 

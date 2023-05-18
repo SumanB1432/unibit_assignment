@@ -21,7 +21,7 @@ app.use('/', route)
 
 app.listen(process.env.PORT,(err)=>{
     if(!err){
-        console.log(`http://localhost:${process.env.PORT}`)
+        console.log("Run on:"+" "+`http://localhost:${process.env.PORT}`)
     }
 })
 
