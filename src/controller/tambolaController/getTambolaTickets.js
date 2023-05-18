@@ -4,6 +4,7 @@ async function getTickets(req,res){
 
         let page= parseInt(req.query.page) || 1;
         let limit = parseInt(req.query.limit)||5;
+        console.log(req.query.limit)
 
         let skip = (page-1)*limit;
 
